@@ -1,6 +1,7 @@
 ***
 * @ryanyzyang 
 * To be familier with GO grammar through the Leetcode algorithm
+
 ***
 
 #### 1. Go语言中没有的语法 
