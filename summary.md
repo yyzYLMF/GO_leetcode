@@ -1,8 +1,7 @@
-/*********************
-  * @ryanyzyang 
-  * To be familier with GO grammar through the Leetcode algorithm
-  *******************/
-
+***
+* @ryanyzyang 
+* To be familier with GO grammar through the Leetcode algorithm
+***
 
 #### 1. Go语言中没有的语法 
     a. Go语言中没有while，要使用for{}来实现，中间使用if来进行结束
