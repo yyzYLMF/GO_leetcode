@@ -26,3 +26,5 @@
     input, _ := reader.ReadBytes('\n')
     fmt.Println(string(input[0 : len(input)-1])) // string(input[0:len(input)-1]) remove '\n'.
 #### 5. Import库的时候可以用()括号，多个库之间没有标点符号，用换行即可
+
+#### 6. Go语言里面动态生成数组使用make, eg: make([]string,len) len可以是`常量`也可以是`变量`
