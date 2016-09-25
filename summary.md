@@ -21,10 +21,21 @@
     b. var ptr *Node仅仅是声明，是没分配空间的，如果想分配空间还需要使用new, eg: var ptr = new(Node)
 
 #### 4. Go的标准输入
-
+    1> 方法一（类似C语言中的scanf）
+    fmt.Scanf("%d %f %s",&ii,&ff,&ss) 输入字符串时，不能包含空格
+    2> 方法二（相当于输入输入一个字符串）
     reader := bufio.NewReader(os.Stdin)
     input, _ := reader.ReadBytes('\n')
     fmt.Println(string(input[0 : len(input)-1])) // string(input[0:len(input)-1]) remove '\n'.
+    
 #### 5. Import库的时候可以用()括号，多个库之间没有标点符号，用换行即可
 
 #### 6. Go语言里面动态生成数组使用make, eg: make([]string,len) len可以是`常量`也可以是`变量`
+
+#### 7. Go语言中的最值都放在math包中，int的最大值、最小值分别为: math.MaxInt32 math.MinInt32
+
+#### 8. Go语言的强制类型转换: `Type`(value) eg: int64(value) 其中int64可以带括号也可以不带，但是变量一定要带（自己经常错）
+
+#### 9. Go语言定义struct的时候，里面的成员变量只用指明类型即可，不用带var，var只在声明变量的时候使用（与C++不同）
+
+#### 10. Go语言的for语句的三个部分不能有多个语句用逗号隔开，要写成`i,j = 0,n-1`形式
